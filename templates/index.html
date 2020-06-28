@@ -7,7 +7,7 @@
     <meta name="author" content="@gotoariel">
     <!-- <link rel="icon" href="favicon.ico"> -->
 
-    <title>Wilkommen, bienvenue, and welcome to Heroku!</title>
+    <title>Kasturi's stock ticker</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,14 +16,19 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-left">
-          <h2>Hello, World!</h2>
-          <ul>
-            <li><a href="/about">About</a></li>
-            <li><a target="_blank" href="https://www.heroku.com/">Heroku</a></li>
-            <li><a target="_blank" href="http://flask.pocoo.org/">Flask</a></li>
-            <li><a target="_blank" href="http://jinja.pocoo.org/docs/2.9/">Jinja2</a></li>
-            <li><a target="_blank" href="http://getbootstrap.com/">Bootstrap</a></li>
-          </ul>
+          <!DOCTYPE html>
+
+
+            <form action="/" method="POST" id="input">
+              <label for="fname">Enter ticker symbol:</label><br>
+              <input type="text" id="ticker" name="ticker" ><br>
+              <label for="fname">Enter month (MM):</label><br>
+              <input type="number" id="month" name="month" ><br>
+              <label for="fname">Enter year (YYYY):</label><br>
+              <input type="number" id="year" name="year" ><br>
+              <input type="submit" value="Submit">
+            </form>
+
         </div>
       </div>
     </div>
